@@ -1,5 +1,5 @@
-//1. TO UPPER FIRST LETTER IN EVERY WORD
-//1.1function method
+//1. TO UPPERCASE THE FIRST LETTER IN EVERY WORD
+//1.1 function method
 function result(a) 
 {
     const arr = a.split(" ");
@@ -13,7 +13,7 @@ function result(a)
 }
 console.log(result("hi how are you?"));
 
-//1.2Anonyomus function method
+//1.2 Anonyomus function method
 var result=function(a) 
 {
     const arr = a.split(" ");
@@ -27,7 +27,7 @@ var result=function(a)
 }
 console.log(result("hi, how are you?"));
 
-//1.3IIFE function method
+//1.3 IIFE function method
 (function result(a) 
 {
     const arr = a.split(" ");
@@ -40,7 +40,7 @@ console.log(result("hi, how are you?"));
     console.log(str2);
 })
 ("hi, how are you?");
-//1.4arrow function method
+//1.4 Arrow function method
 const result=(a)=>
 {
     const arr = a.split(" ");
@@ -56,7 +56,7 @@ console.log((result("hi, how are you?")));
 //..............................................................//
 
 //2.TO FIND PALINDROME IN AN ARRAY
-//2.1function method
+//2.1 Function method
 function pali(str)
 {
     const p=[];
@@ -81,7 +81,7 @@ return p;
 }
 console.log(pali([123,"aba","dhh","mango","malayalam",123321]));
 
-//2.2Anonyomus function method
+//2.2 Anonyomus function method
 
 var pali=function(str)
 {
