@@ -79,7 +79,7 @@ for(var i=0;i<=str.length-1;i++)
 }
 return p;
 }
-console.log(pali([123,"aba","dhh","mango","malayalam",123321]));
+console.log("palindrome are",pali([123,"aba","dhh","mango","malayalam",123321]));
 
 //2.2 Anonyomus function method
 
@@ -105,7 +105,7 @@ for(var i=0;i<=str.length-1;i++)
 }
 return p;
 }
-console.log(pali([123,"aba","dhh","mango","malayalam",123321]));
+console.log("palindrome are",pali([123,"aba","dhh","mango","malayalam",123321]));
 
 //2.3 IIFE function method
 
@@ -129,7 +129,7 @@ for(var i=0;i<=str.length-1;i++)
   p.push(str[i]);
   }
 }
-console.log(p);
+console.log("palindrome are",p);
 }
 )
 ([123,"aba","dhh","mango","malayalam",123321]);
@@ -158,24 +158,24 @@ for(var i=0;i<=str.length-1;i++)
 }
 return p;
 }
-console.log(pali([123,"aba","dhh","mango","malayalam",123321]));
+console.log("palindrome are",pali([123,"aba","dhh","mango","malayalam",123321]));
 //........................................................................//
 
 //3.TO ADD EACH NUMBER IN AN ARRAY
 //3.1 function method
 function add(a)
 {
-var add=0;
+let add=0;
 for(var i=0;i<a.length;i++)
 {
   add=add+a[i];
 }
 return add;
 }
-console.log(add([20,22,3,4,55]));
+console.log("sum of all numbers are",add([20,22,3,4,55]));
 
 //3.2 Anonyomus Function method
-var add=function (a)
+let add=function (a)
 {
 var result=0;
 for(var i=0;i<a.length;i++)
@@ -184,32 +184,32 @@ for(var i=0;i<a.length;i++)
 }
 return result;
 }
-console.log(add([20,22,3,4,55]));
+console.log("sum of all numbers are",add([20,22,3,4,55]));
 
  //3.3 IIFE function method
 (function add(a)
 {
-var result=0;
+let result=0;
 for(var i=0;i<a.length;i++)
 {
   result=result+a[i];
 }
-console.log(result);
+console.log("sum of all numbers are",result);
 }
 )
 ([20,22,3,4,55]);
 
 //3.3 Arrow Function method
-var add=(a)=>
+const add=(a)=>
 {
-var result=0;
+let result=0;
 for(var i=0;i<a.length;i++)
 {
   result=result+a[i];
 }
 return result;
 }
-console.log(add([20,22,3,4,55]));
+console.log("sum of all numbers are",add([20,22,3,4,55]));
 //.................................................................//
 
 //4. TO FIND A ODD NUMBER IN AN ARRAY
@@ -226,7 +226,7 @@ console.log(add([20,22,3,4,55]));
     }
     return result;
   }
-  console.log(odd([1,2,3,4,5,6,7,8,9,10]));
+  console.log("odd numbers are",odd([1, 2, 3, 4, 5, 6, 7, 8, 9,10]));
   
   //4.2 Anonyomus Function method
   var odd = function (arr) 
@@ -241,7 +241,7 @@ console.log(add([20,22,3,4,55]));
     }
     return result;
   }
-  console.log(odd([1,2,3,4,5,6,7,8,9,10]));
+  console.log("odd numbers are",odd([1, 2, 3, 4, 5, 6, 7, 8, 9,10]));
   
   //4.3 IIFE function method
   (function odd(arr) 
@@ -254,13 +254,13 @@ console.log(add([20,22,3,4,55]));
         result.push(arr[i]);
       }
     }
-    console.log(result);
+    console.log("odd numbers are",result);
   })([1,2,3,4,5,6,7,8,9,10]);
   
   //4.4 Arrow Function
-  const od = (arr) => 
+  const odd = (arr) => 
   {
-    var result = [];
+    let result = [];
     for (var i = 0; i < arr.length; i++) 
     {
       if (arr[i] % 2 != 0) 
@@ -270,7 +270,7 @@ console.log(add([20,22,3,4,55]));
     }
     return result;
   }
-  console.log(od([1, 2, 3, 4, 5, 6, 7, 8, 9,10]));
+  console.log("odd numbers are",odd([1, 2, 3, 4, 5, 6, 7, 8, 9,10]));
   //.............................................................//
 
 
