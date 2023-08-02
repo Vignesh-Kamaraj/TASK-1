@@ -62,14 +62,7 @@ function pali(str)
     const p=[];
 for(var i=0;i<=str.length-1;i++)
 {
-  if(typeof(str[i])!=typeof("a"))
-  {
     var str1=str[i].toString();
-  }
-  else
-  {
-     str1=str[i];
-  }
     var arr=str1.split("");
     var arr1=arr.reverse().join("");
   if(arr1==str1)
@@ -88,14 +81,7 @@ var pali=function(str)
     const p=[];
 for(var i=0;i<=str.length-1;i++)
 {
-  if(typeof(str[i])!=typeof("a"))
-  {
     var str1=str[i].toString();
-  }
-  else
-  {
-     str1=str[i];
-  }
     var arr=str1.split("");
     var arr1=arr.reverse().join("");
   if(arr1==str1)
@@ -114,14 +100,7 @@ console.log("palindrome are",pali([123,"aba","dhh","mango","malayalam",123321]))
     const p=[];
 for(var i=0;i<=str.length-1;i++)
 {
-  if(typeof(str[i])!=typeof("a"))
-  {
     var str1=str[i].toString();
-  }
-  else
-  {
-     str1=str[i];
-  }
     var arr=str1.split("");
     var arr1=arr.reverse().join("");
   if(arr1==str1)
@@ -141,14 +120,7 @@ const pali=(str)=>
 const p=[];  
 for(var i=0;i<=str.length-1;i++)
 {
-  if(typeof(str[i])!=typeof("a"))
-  {
     var str1=str[i].toString();
-  }
-  else
-  {
-     str1=str[i];
-  }
     var arr=str1.split("");
     var arr1=arr.reverse().join("");
   if(arr1==str1)
